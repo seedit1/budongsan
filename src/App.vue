@@ -1,11 +1,19 @@
 <template>
   <div class="menu">
-    <a v-for="a in 메뉴들" :key="a">{{a}}</a>
-    
+    <a v-for="a in 메뉴들" :key="a">{{a}}</a>    
+  </div> 
+  <div>
+    <h4>{{products[0]}}</h4>
+    <p>{{price1[0]}}만원</p>
+    <button>허위매물신고</button><span>신고 수: 0</span> 
+  </div>
+  <div>
+    <h4>{{products[1]}}</h4>
+    <p>{{price1[1]}}만원</p> 
   </div>  
-  <div v-for="(a,i) in products " :key="i">
-    <h4>{{products[i]}}</h4>
-    <p>{{price1[i]}}만원</p>
+  <div>
+    <h4>{{products[2]}}</h4>
+    <p>{{price1[2]}}만원</p> 
   </div>      
 </template>
 

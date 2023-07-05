@@ -5,7 +5,8 @@
   <div>
     <h4>{{products[0]}}</h4>
     <p>{{price1[0]}}만원</p>
-    <button>허위매물신고</button><span>신고 수: 0</span> 
+    <button v-on:click="신고수++">허위매물신고 </button>
+    <span>신고수 : {{신고수}}</span> 
   </div>
   <div>
     <h4>{{products[1]}}</h4>
@@ -26,7 +27,8 @@ export default {
     return {
       price1:[ 60, 70, 80 ],      
       메뉴들 : ['Home', 'Shop', 'About'],
-      products : ['역삼동 원룸', '천호동 원룸', '마포구 원룸'],     
+      products : ['역삼동 원룸', '천호동 원룸', '마포구 원룸'],
+      신고수: 0,     
     }
   },
   components: {
